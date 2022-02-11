@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Для входа зарегистрируйтесь
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+<h1>Добавление статьи</h1>
+<form method="post">
+    <h3>Имя статьи</h3>
+    <input type="text" name = "title" id="title" class="form-control" placeholder="Введите название">
+    <h3>Тема статьи</h3>
+    <textarea name="intro" id="intro" class="form-control" placeholder="Введите тему статьи"></textarea>
+    <h3>Статья</h3>
+    <textarea name="text" id="text" class="form-control"  placeholder="Создайте статью"></textarea><br>
+    <input type="submit" class="btn btn-success" value="Send">
+</form>
+</div>
+{% endblock %}
