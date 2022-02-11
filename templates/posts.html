@@ -6,14 +6,14 @@
 
 {% block body %}
 <div class="container">
-<h1>Все статьи на сайте</h1>
+<h1>All article in site</h1>
 {% if articles %}
     {% for el in articles %}
     <div class="alert alert-info">
         <h3>{{ el.title }}</h3>
         <h2>{{ el.intro }}</h2>
-        <h5>Дата публикации: {{ el.date.date() }}</h5>
-        <a href="/posts/{{ el.id }}" class="btn btn-warning">Детальнее</a>
+        <h5>Date of publication: {{ el.date.date() }}</h5>
+        <a href="/posts/{{ el.id }}" class="btn btn-warning">More details</a>
     </div>
     {% endfor %}
 {% else %}

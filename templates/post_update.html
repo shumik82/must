@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Обновление статьи
+Update Article
 {% endblock %}
 
 {% block body %}
 <div class="container mt-5">
-<h1>Обновление статьи</h1>
+<h1>Update Article</h1>
 <form method="post">
-    <h3>Название статьи</h3>
+    <h3>Name Article</h3>
     <input type="text" name = "title" id="title" class="form-control" value="{{ article.title }}">
-    <h3>Тема статьи</h3>
+    <h3>Topic of the article</h3>
     <textarea name="intro" id="intro" class="form-control">{{ article.intro }}</textarea>
-    <h3>Статья</h3>
+    <h3>Article</h3>
     <textarea name="text" id="text" class="form-control">{{ article.text }}</textarea><br>
-    <input type="submit" class="btn btn-success" value="Обновить">
+    <input type="submit" class="btn btn-success" value="update">
 </form>
 </div>
 {% endblock %}
